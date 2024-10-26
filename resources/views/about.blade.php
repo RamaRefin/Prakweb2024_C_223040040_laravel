@@ -1,25 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman About Lion</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+<x-layout>
+<x-slot:tittle>{{ $tittle }}</x-slot:tittle>
+<h3 class="text-xl">
+ Halaman About
+</h3>
+<p>Nama : {{ $name }}</p>
 
 
-<body>
-    
-
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/blog">Blog</a>
-    <a href="/contact">Contact</a>
-
-<h1> Halaman About </h1>
-<h3> Owner : {{ $nama }} </h3>
-<img src="img/lion.jpg" alt="lion" width="200">
-    
-</body>
-</html>
+</x-layout>
